@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <math.h>
 float freq(float l, float c, float r)
