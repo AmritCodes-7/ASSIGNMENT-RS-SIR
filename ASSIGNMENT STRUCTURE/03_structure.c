@@ -1,5 +1,6 @@
 #include <stdio.h>
-#define MAX 1
+#define MAX 5
+
 typedef struct
 {
     float salary;
