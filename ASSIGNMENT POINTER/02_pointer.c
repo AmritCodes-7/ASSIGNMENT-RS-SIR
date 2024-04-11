@@ -15,6 +15,7 @@ int minimum(int *ptr)
     }
     return min;
 }
+
 int main()
 {
     int arr[3][3], min;
@@ -32,6 +33,7 @@ int main()
     min = minimum(p_arr);
     printf("\nminimum: %d", min);
     printf("\n\n");
+
     for (int i = 0; i < 3; i++)
     {
         arr[i][i] = min;
@@ -45,5 +47,6 @@ int main()
         }
         printf("\n");
     }
+
     return 0;
 }
