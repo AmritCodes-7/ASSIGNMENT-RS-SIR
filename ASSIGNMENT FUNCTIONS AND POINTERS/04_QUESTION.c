@@ -17,7 +17,7 @@ int main()
     {
         float c = i;
         float freq = frequency(r, l, c);
-        printf("%.3f\t\t%.3f\t\t%.3f\t\t%f\n", l, r, c, freq);
+        printf("%.3f\t\t%.3f\t\t%.3f\t\t%.3f\n", l, r, c, freq);
     }
 
     return 0;
