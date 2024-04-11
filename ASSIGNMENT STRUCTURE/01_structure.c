@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 typedef struct
 {
     char name[30];
@@ -18,6 +19,20 @@ void sort(air_line *p, int n)
                 int temp = (p + i)->cap;
                 (p + i)->cap = (p + j)->cap;
                 (p + j)->cap = temp;
+
+                char temporary1[30];
+                strcpy(temporary1, (p + i)->name);
+                strcpy((p + i)->name, (p + j)->name);
+                strcpy((p + j)->name, temporary1);
+
+                char temporary2[10];
+                strcpy(temporary2, (p + i)->model_num);
+                strcpy((p + i)->model_num, (p + j)->model_num);
+                strcpy((p + j)->model_num, temporary2);
+
+                float temp2 = (p + i)->speed;
+                (p + i)->speed = (p + j)->speed;
+                (p + j)->speed = temp2;
             }
         }
     }
